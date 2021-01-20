@@ -1,0 +1,588 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: i_am_admin
+  examples: |
+    - [amit](PERSON) is my full name
+    - [sangmitra](PERSON) my full name
+    - [ramesh](PERSON) full name
+    - [kumal](PERSON) is latest full name
+    - my full name is [sunita](PERSON)
+    - full name [akash](PERSON)
+    - i am [ankit](PERSON)
+    - i am [vikash](PERSON)
+    - i am [mahadev](PERSON)
+    - i am [suman](PERSON)
+    - i am [shanti](PERSON)
+    - i am [swaraj](PERSON)
+    - i am [jini](PERSON)
+    - i am [pooja](PERSON)
+    - i am [mina][PERSON]
+    - my old full name is [vandana](PERSON)
+    - my current full name is [vinod](PERSON)
+    - [simran](PERSON) is my full name
+    - full name [rekha](PERSON)
+    - my only full name is [bipin](PERSON)
+    - my name is [rakesh](PERSON)
+    - [rakesh](PERSON) is my name
+    - my full name is [rakesh](PERSON)
+    - my only name is [raskesh](PERSON)
+    - MY only full name is [raskesh](PERSON)
+    - i am admin [vikash](PERSON)
+    - [pooja](PERSON) admin
+    - [neha](PERSON) the admin
+    - i am owner [vakil](PERSON)
+    - i am doctor [ali](PERSON)
+    - i am doctor [mohomad](PERSON)
+    - I admin [rekha](PERSON)
+    - I doctor [namrata](PERSON)
+    - i am ddoctor [supriya](PERSON)
+    - i am doctor [rakesh](PERSON)
+    - I dr. [ramesh](PERSON)
+    - i doctor [swaraj](PERSON)
+    - I doctor [deepanshu](PERSON)
+   
+    
+- intent: my_password
+  examples: |
+    - my password [1234556787](phonenumber)
+    - password [2735297636](phonenumber)
+    - [9992833233](phonenumber) IS  my password
+    - [9808753407](phonenumber) is my password
+    - my password is [9873038303](phonenumber)
+    - password is [8729873849](phonenumber)
+    - my password is [1238339220](phonenumber)
+    - password is [1123123332](phonenumber)
+    - [1231222332](phonenumber) is only password
+    - my only password is [1223456789](phonenumber)
+    - my old password is [1927321981](phonenumber)
+    - my new password is [9862826181](phonenumber)
+    - [1123876383](phonenumber) is my latest password
+    - [1239836383](phonenumber) is my new password
+    - [1273528292](phonenumber) is my recent password
+    - [123873830](phonenumber) is my password
+    - [3394730](phonenumber) is password
+    - [133839](phonenumber) password
+    - [123376438](phonenumber) is my passsword
+    - password is [1221282739](phonenumber)
+    - pasword is [1628338393y37](phonenumber)
+    - my passworrd [17282h292dvd02!](phonenumber)
+    - poswrd [839370dhucbu9@%5](phonenumber)
+    - pasword [1829&g*jh192*8](phonenumber)
+    - password is [18292hiedb@y9392@](phonenumber)
+    - my password is [122y9#heei@0929229](phonenumber)
+    - my password is[02830@393$$](phonenumber)
+    - [030383@heu3#he](phonenumber) my password
+    - [9279@uei##jei1](phonenumber) password
+    - [0370@shahu](phonenumber) is my password
+    - [12920@gani&&] is my password
+    - [amitsorde] is my password
+    - [19739@@h03#] is my good password
+    - ok my password is [9191@sdk](phonenumber)
+    - ok my new password is [888**2929](phonenumber)
+    - my only password is [939@@000UH](phonenumber)
+    - my lovely password is [92729@@@983993](phonenumber)
+    - password [187983&^^^](phonenumber)
+    - password [028929####](phonenumber)
+    - my only password [1283$$%%%1jsdd](phonenumber)
+    - my password [129@@@jjdhd](phonenumber)
+    - my only pass word is [1028###jdjdj](phonenumber)
+    - my password is [182829ameie](phonenumber)
+    - password is [amit129229](phonenumber)
+    - password is [1929@@@mirhf](phonenumber)
+
+- intent: my_username
+  examples: |
+    - [amit1233@gmail.com](user) is my username
+    - [qwret12334@gmail.com](user) my username
+    - [vikash3455@gmail.com](user) username
+    - [sunil3456@gmail.com](user) is latest username
+    - my username is [sunita123434@gmail.com](user)
+    - username [vinit32434@gmail.com](user)
+    - [sunil12334@gmail.com](user) username
+    - my old username is [vandana876778@gmail.com](user)
+    - my current username is [vinode5776@gmail.com](user)
+    - [simran@gmail.com](user) is my user name
+    - user name [rekha1233@gmail.com](user)
+    - my only user name is [vinode12323@gmail.com](user)
+    - [sunita12343@gmail.com](user) is only username
+    - [rakesh2803@gmail.com](user) username
+    -  [ankt.sonu123o@gmail.com](user) is my username
+    - my good username[anita12983@gmail.com](user) 
+    - my bad username [jini.sorde@gmail.com](user)
+    - ok use name  [supriya.snehal@gmai.com](user)
+    - my user name is [nehasahu@gmail.com](user)
+    - only username is this [vinita@gmail.com](user)
+    - my only login [taniya.verma@gmail.com](user)
+    - log user [komal.singh@gmail.com](user)
+    - my only log user is [shiva.dara@gmail.com](user)
+    - login id is [salimkhan@gmail.com](user)
+    - my login username[kumansingh@gmail.com](user)
+    - is my login id [amitsorde001@gmail.com](user)
+    - my id is [amitshau0120@gmai.com](user)
+    - id is [ganeshmishra939@gmail.com](user)
+    - my good id [vinodekokiliada@gmail.com](user)
+    - id [sangmitra123@gmail.com](user)
+    - login id [supriyabadge123@gmail.com](user)
+    - my username is [shivani.@gmail.com](user)
+    - i login by user name [ramesh12379@gmail.com](user)
+    - my username and login id is [amitsi123@gmail.com](user)
+    - my login and username is [vinoder@gmail.com](user)
+    - my username and login id is [durgasoni@gmail.com](user)
+    - username and login is [kishor@gmail.com](user)
+    - my username [amirkhan@gmail.com](user)
+    - my login id [amirkhan12435@gmail.com](user)
+    - login [amirkhan@gmail.com](user)
+    
+
+- intent: my_signout
+  examples: |
+    - signout
+    - signout plase
+    - i want to go to signout
+    - i want to go through signout
+    - finally signout
+    - please please signout
+    - ok than signout
+    - ok signout
+    - ok finaly signout
+    - ok finally signout
+    - ok ok signout 
+    - logout
+    - i want to sign out
+    - i want to logout
+    - ok logout
+    - ok ok logout
+    - please logout
+    - please please logout
+    - i want logout
+    - go to logout
+    - on the logout
+    - want logout
+    - wish logout
+    - logout please
+    - loooogout
+    - logooooooooout please
+    - logout now
+    - finally logout
+    - nearly logout
+    - yes finally logout 
+    - signout
+    - signout now
+    - i want to signout 
+    - want to go through logout
+    - want to go to logout
+    - ok finally logout 
+    - please signout
+ 
+
+- intent: to_schedule 
+  examples: |
+    - shedule  
+    - shedule please
+    - today shedule
+    - todays shedule please
+    - what is the today's shedule
+    - tell me shedule
+    - ok tell the  shedule
+    - please tell the shedule
+    - please tell todays shedule
+    - todays shedule please
+    - whats todays shedule
+    - tell me today's shedule
+    - give me today's shedule
+    - give today's shedule
+    - today's shedule give me
+    - i want today's shedule
+    - want todays shedule
+    - show me todays schedule
+    - show me schedule please
+    - show the details of schedule
+    - show the details of todays schedule
+    - plase todays schedule 
+    - let me know todays schedule
+    - please show me schedule
+    - detail of todays schedule
+    - detail of schedule
+    - please tell the detail of schedule
+    - please give my todays schedule
+    - todays plan 
+    - plan today
+    - plan of today
+    - today's plan 
+    - please tell me todays plan
+    - todays plan tell me please
+    - finally show me todays plan
+    - what is plan of today
+    - whats today plan
+    - what plan of today
+    - first tell me today plan
+    - give me todays plan
+    - give the todays plan
+    - plan of todays please 
+    - please tell me todays plan
+    - please tell todays plan
+    - show me todays plan 
+    - show me plan of today
+    - please show me todays plan
+    - present me todays plan 
+    - bring todays plan
+    - what is program of today
+    - what program today 
+    - whats todays program
+    - whats is the program of today
+    - whats is program 
+    - today program
+    - show me todays program
+    - todays program show me
+    - program show me
+    - tell me today program
+    - tell todays program
+    - tell program
+    - give me todays program
+    - give today program
+    - todays program show me 
+   
+
+
+- intent: tomar_schedule 
+  examples: |
+    - tomorrow schedule please
+    - tomorrow schedule
+    - tomorrow shedule please
+    - please tomorrow schedule
+    - please give me tomorrow schedule 
+    - what is the tomorrow schedule
+    - tell me tomorrow schedule
+    - tell me tomorrow schedule
+    - tell me tommorrow scheule 
+    - give me tomorrow shedule
+    - give tomorrow shedule
+    - tomorrow shedule give me
+    - i want tomorrow's shedule
+    - want tomorrow shedule
+    - tommaro schedule
+    - tommarow schedule
+    - tommorow scheduele
+    - tomarow scheduele
+    - tomarow schedul
+    - tomaro schedule
+    - what is my tommaro shedule
+    - what is tommoro schedule
+    - what tommorow scheduele
+    - what tomarow schedule
+    - tomorrow plan
+    - tommarow plan 
+    - tommarrow plan
+    - please give me tomarrow plan 
+    - please tell me tomorrow plan
+    - please give plan of tomorrow
+    - plase tell the plan of tomarrow 
+    - what is tomorrow"s plan
+    - what is my tomorrow"s plan
+    - what plan tomorrow 
+    - what my plan tomorrow 
+    - tell my tomorrow plan
+    - tell plan tomorrow 
+    - tell details plan of tomorrow 
+    - tell tomorrow plan
+    - plan of tomorrow 
+    - tomorrow plan
+    - tommorow plan
+    - tomorw plan
+    - i want to know my tomorrow plan
+    - i want my plan of tomorrow 
+    - want plan tomorrow 
+    - give tomorrow plan
+    - give the tomorrow plan
+    - plan tomorrow give me 
+    - plan"s tomorrow
+    - tomorrow timetable
+    - tomorow timetable
+    - tomoro timetable
+    - tomorrow"s timetable
+    - time table of tomorrow 
+    - what is time table pf tomorrow 
+    - what is timetable of tomorrow 
+    - what is my tomorrow timetable
+    - tell the timetable of tomorrow
+    - tell timetable of tomorrow
+
+
+- intent: user_data
+  examples: |
+    - i want to know about patient [patient vikash](patient) 
+    - status about [patient kavita](patient)
+    - tell about [patient ramesh](patient)
+    - tell the phone no. of [patient suman](patient)
+    - tell me the medical status about [patient niki](patient)
+    - ok ok give the detail information about [patient kamesh](patient)
+    - give information about [patient rukmini](patient)
+    - give contact detail of [patient rakesh](patient)
+    - give medical status of [patient shiva](patient)
+    - give the medical information of [patient neha](patient)
+    - give the medical info of [patient jini](patient)
+    - medical info of [patient vijay](patient)
+    - detail infromation of [patient vinod](patient)
+    - please give the information [patient taniya](patient)
+    - please give the medical info [patient sanjay](patient)
+    - please tell me info of [patient manisha](patient)
+    - [patient kamesh](patient) 
+    - [patient amit](patient)  
+    - [patient suman](patient)
+    - [patient sachin](patient)
+    - [patient neha](patient)
+    - [patient pooja][patient]
+    - [patient poonam](patient)
+    - [patient Aaradhya](patient)
+    - [patient Adah](patient)	
+    - [patient Adhira](patient)	
+    - [patient Alisha](patient)
+    - [patient Amoli](patient)	
+    - [patient Anaisha](patient)	
+    - [patient Ananya](patient)	
+    - [patient Anika](patient)	
+    - [patient Anushka](patient)
+    - [patient Asmee](patient)
+    - [patient Avni](patient)	
+    - [patient Carina](patient)	
+    - [patient Drishti](patient)
+    - please give user data
+    - user data
+    - give me the patient detail
+    - data of user 
+    - patient detail please
+    - show me patient detail
+    - 
+
+
+- intent: update_data
+  examples: |
+    - update
+    - update my detail
+    - update my data
+    - update my info
+    - update info
+    - update my personal info
+    - update my persoanl information
+    - update my biodata
+    - please update my information
+    - update information
+    - update my infomation
+    - update my name
+    - update my surname
+    - update my mobile no.
+    - update mu mobile number
+    - update my contact detail 
+    - i want to change my detail 
+    - i want to change my pernsonal information
+    - i want to change my mobile number
+    - i want to change my contact detail
+    - i want to update my information 
+    - i want to update my info 
+    - i want to update my personal information
+    - i want to update my details
+    - please change my detail 
+    - please chaneg my number 
+    - please change my contact detail
+    - change my info
+    - i want to change my info
+    - change my info
+    - change info
+    - info change
+    - change my detail
+    - please change my detail    
+
+- intent: change_name
+  examples: |
+    - i want to change my name [vikas_to_amit](upname)
+    - change [vinit_to_rakesh](upname)
+    - change name [ramesh_to_nabeel](upname)
+    - name change [aron_to_dass](upname)
+    - change my name [amir_to_salman](upname)
+    - change my name [salman_to_anil](upname)
+    - change name [karina_to_karrina](upname)
+    - change name [tanya_to_manish](upname)
+    - change name [amitab_to_akshy](upname)
+    - name change [amit_to_kunal](upname)
+    - change [anjali_to_supriya](upname)
+    - change my name [vinode_to_shiva](upname)
+    - name change [rakesh_to_akshy](upname)
+    - please change my name [ankita_to_anita](upname)
+    - name change [pooja_to_nikita](upname)
+    - change [nikki_to_nikita](upname)
+    - change [vinit_to_rakesh](upname)
+    - please change [anjali_to_rahul](upname)
+    - change [vinit_to_vinita](upname)
+    - change [katapa_to_bahubali](upname)
+    - change [sabnam_to_kanta](upname)
+    - change [patanjali_to_kiran](upname)
+    - please change [kaka_to_sallu](upname) 
+    - change [vinit_to_rakesh](upname)
+    - change [sachin_to_adi](upname)
+    
+- intent: change_my_number
+  examples: |
+    - i want to change the my numner[9827918974_to_9999999999](upnumber)
+    - change my number [13252772425_to_16781528762](upnumber)
+    - change my number [352144265772_to_1342624562](upnumber)
+    - change the number [0987654321_to_12345678890](upnumber)
+    - my new number [526625626_to_2465625677](upnumber)
+    - change the number [1122323232_to_18282928982](upnumber)
+    - number change [8989898989_to_8989898989](upnumber)
+    - number to be change [1231231231_to_2342342342](upnumber)
+    - number change [3213213211_to_1351351351](upnumber)
+    - number is change [0980980980_to_5675675686](upnumber)
+    - number change [2792729289_to_1672687827](upnumber)
+    - number change [8268299279_to_9789278772](upnumber)
+    - number change [1983033903_to_7289027393](upnumber)
+    - number change [1938393833_to_3893740480](upnumber)
+    - number change [30484048940_to_830494303](upnumber)
+    - number change [83093840480_to_038044049](upnumber)
+    - number change [92933039404_to_484048049](upnumber)
+    - number change [98404847948_to_084044049](upnumber)
+    - number change [98984084049_to_394049040](upnumber)
+    - no change [92792992872_to_246562567](upnumber)
+    - no. change [09080289202_to_292928929](upnumber)
+    - no. change [99702371911_to_982791919](upnumber)
+    - no. change [99197191137_to_9793173191](upnumber)
+    - number chaaange [09209390333_to_9393939903](upnumber)
+    - number chaaange [19389339393_to_09380393993](upnumber)
+    - number channnge [93289383938_to_93930303993](upnumber)
+    - number chang [98393893993_to_98394849442](upnumber)
+    - number CHange [93893993939_to_93789399389](upnumber)
+    - number ChanGe [93803903993_to_93039030000](upnumber)
+    - change number [18829892892_to_09109209929](upnumber)
+    - change the number [99289299928_to_87878278782](upnumber)
+
+- intent: cancel_appointment
+  examples: |
+    - i want to cancel my appointment
+    - i want to cancel the appointment
+    - i want to cancel todays appointment
+    - i want to cancel tomarrow appointment
+    - how i cancel my appointment?
+    - how i cancel my today appointment?
+    - how i cancel my tommorao appointment?
+    - how i remove my appointment?
+    - how i remove todays appointment?
+    - how i remove tommarow appointment?
+    - remove my appointment
+    - remove appointment
+    - remove appoint
+    - cancel my appointment
+    - cancel appointment
+    - delete my appointment
+    - delete appointment
+    - please cancel my appointment
+    - please cancel appointment
+    - please cancel today appointment
+    - please cancel tommaro appointment
+    - please cancel from 2 octuber to 3 november
+    - remove my appointmet of tommarow 
+    - remove my appointment of monday
+    - cancal appointment of tuesday
+    - cancal appointment of sunday
+    - cancal my appointment afternoon
+    - cancel my appointment morning 
+
+- intent: cancel_appointment_user_id
+  examples: |
+    - cancel the appointment of  [user_id_12331](user_id)
+    - [user_id_19299](user_id) cancel the appointment 
+    - deactivate the appointment with [user_id_10281](user_id)
+    - [user_id_10292](user_id) cancel
+    - [user_id_10229](user_id) remove the appointment
+    - cancel [user_id_12322](user_id) 
+    - [user_id_23445](user_id) cancel the meeting
+    - status of [user_id_8267](user_id) is cancel
+    - meeting [user_id_5465](user_id) is cancel
+    - please remove meeting [user_id_2332](user_id)
+    - remove the appointment [user_id_9879](user_id)
+    - cancel the meeting the [user_id_9799](user_id)
+    - remove the meeting [user_id_9897](user_id)
+    - session [user_id_12347](user_id) cancel
+    - cancel session [user_id_18829](user_id)
+    - please cancel the session [user_id_19822](user_id)
+    - delete the session the [user_id_29922](user_id)
+    - interview of [user_id_19980](user_id) is cancel
+    - cancel the interview [user_id_93893](user_id)
+    - interview [user_id_293737](user_id) remove
+    - please remove the interview the [user_id_29494](user_id)
+    - please remove the [user_id_39933](user_id)
+    - please cancel [user_id_29933](user_id) 
+    - [user_id_29371](user_id) 
+    - [user_id_37839](user_id)
+    - [user_id_83929](user_id)
+    - [user_id_93083](user_id)
+    - [user_id_29948](user_id)
+    - [user_id_00902](user_id)
+    - [user_id_09992](user_id)
+
+
+- intent: help
+  examples: |
+    - i need help
+    - i want help
+    - help
+    - help help
+    - give me help
+    - please help me
+    - help me change name
+    - i need assist
+    - i want assist
+    - asist
+    - help assist
+    - give me assist
+    - please assist me
+    - i need aid
+    - i want aid
+    - aid
+    - aid aid
+    - give me aid
+    - please aid me
+    - how can i change my name? 
+    - how i change my name?
+    - change my name
+    - how can i change my number? 
+    - how i change my number?
+    - change my number
+    
