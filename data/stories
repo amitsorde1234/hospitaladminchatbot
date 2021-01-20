@@ -1,0 +1,103 @@
+version: "2.0"
+
+stories:
+
+
+
+- story: today_schedule
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: to_schedule
+  - action: action_get_schedule
+  - intent: my_signout
+  - action: action_signout
+   
+
+- story: tommaro_password
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: tomar_schedule
+  - action: action_get_tomarro_schedule
+  - intent: my_signout
+  - action: action_signout
+   
+
+- story: user_data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: user_data
+  - action: action_user_data
+  - intent: my_signout
+  - action: action_signout
+
+
+- story: update_data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: update_data
+  - action: action_update
+  - intent: change_name
+  - action: action_change_name
+
+- story: update_number
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: update_data
+  - action: action_update
+  - intent: change_my_number
+  - action: action_change_number
+
+- story: cancel_appiontmentt
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: i_am_admin
+  - action: action_i_admin
+  - intent: my_username
+  - action: action_username
+  - intent: my_password
+  - action: action_password
+  - intent: cancel_appointment
+  - action: action_appointment
+  - intent: cancel_appointment_user_id
+  - action: action_appointment_user_id
+
+- story: help
+  steps:
+  - intent: help
+  - action: action_help
