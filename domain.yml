@@ -1,0 +1,73 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- i_am_admin
+- my_password
+- my_username
+- phonenumber
+- my_signout
+- to_schedule
+- tomar_schedule 
+- user_data
+- update_data
+- change_name
+- change_my_number
+- cancel_appointment
+- cancel_appointment_user_id
+- help
+slots:
+ PERSON:
+  type: text
+ phonenumber:
+  type: text
+ user:
+  type: text
+ patient:
+  type: text 
+ upname:
+  type: text
+ upnumber:
+  type: text
+ user_id:
+  type: text
+entities:
+ - PERSON
+ - phonenumber
+ - user
+ - patient
+ - upname
+ - upnumber
+ - user_id
+responses:
+  utter_greet:
+  - text: Hey! How can i help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_update:
+  - text: want to change your details \n
+        type:- %%change number%%\n
+  utter_default:
+      - text: Sorry, Didn’t understand. Please say again    
+           
+actions:
+  - action_i_admin 
+  - action_username
+  - action_password
+  - action_signout
+  - action_get_schedule
+  - action_get_tomarro_schedule
+  - action_user_data
+  - action_update
+  - action_change_name
+  - action_change_number
+  - action_appointment
+  - action_appointment_user_id
+  - action_help
